@@ -14,6 +14,29 @@ class HelloWorld {
 
         int novoJogo = sc.nextInt();
 
+//bibliotecas de mensagens 
+        String[] mensagensVitoria = {
+            "Parabéns! Você venceu!",
+            "Incrível! Vitória para o jogador.",
+            "Você mostrou suas habilidades e venceu.",
+            "A vitória é sua, jogador!",
+            "Mais uma para o jogador! Parabéns.",
+            "Impressionante! O jogador conquista a vitória.",
+            "Você é imparável! Vitória para o jogador.",
+            "O jogador comemora outra grande vitória."
+        };
+
+        String[] mensagensVitoriaMaquina = {
+            "A máquina mais uma vez prova ser invencível.",
+            "Desta vez, a vitória é da máquina.",
+            "A maquina mostra sua superioridade.",
+            "Você deu o seu melhor, mas a máquina vence novamente.",
+            "A vitória desta vez é da máquina.",
+            "A maquina se destaca com outra vitória.",
+            "Infelizmente, a máquina prevaleceu.",
+            "A máquina comemora mais uma vitória."
+        };
+
         while (novoJogo == 1) {
             System.out.println("Escolha '1' para pedra, '2' para papel e '3' para tesoura: ");
             int escolhaPlayer = sc.nextInt();
@@ -73,9 +96,9 @@ class HelloWorld {
             }
             time();
             if (!resultado) {
-                System.out.println("A maquina ganhou, ela escolheu " + escolhaIa + " e voce escolheu " + escolhaPlayer);
+                System.out.println(obterMensagemAleatoria(mensagensVitoriaMaquina));
             } else {
-                System.out.println("A maquina perdeu, ela escolheu " + escolhaIa + " e voce escolheu " + escolhaPlayer);
+                System.out.println(obterMensagemAleatoria(mensagensVitoria));
             }
 
             switch (escolhaPlayer) {
@@ -135,5 +158,10 @@ class HelloWorld {
         } catch (InterruptedException e) {
           Thread.currentThread().interrupt();
         }
+    }
+    private static String obterMensagemAleatoria(String[] array) {
+        Random random = new Random();
+        int indice = random.nextInt(array.length);
+        return array[indice];
     }
 }
