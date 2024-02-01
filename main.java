@@ -15,7 +15,7 @@ class HelloWorld {
         int novoJogo = sc.nextInt();
 
         while (novoJogo == 1) {
-            System.out.println("Escolha '1' para pedra, '2' para papel e '3' para tesoura");
+            System.out.println("Escolha '1' para pedra, '2' para papel e '3' para tesoura: ");
             int escolhaPlayer = sc.nextInt();
 
             while (escolhaPlayer < 1 || escolhaPlayer > 3) {
@@ -108,7 +108,7 @@ class HelloWorld {
                     break;
             }
             time();
-            System.out.println("maquina quer jogar novamente? Digite '1' para sim ou '2' para nao: ");
+            System.out.println("\nQuer jogar novamente? Digite '1' para sim ou '2' para nao: ");
             novoJogo = sc.nextInt();
         }
         time();
