@@ -33,6 +33,8 @@ Este é um simples jogo de "Pedra, Papel e Tesoura" desenvolvido em Java, criado
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests para melhorar o jogo.
 
+O jogo agora apresenta mensagens dinâmicas de vitória para tornar a experiência mais envolvente. A ideia e implementação das mensagens foram colaborações valiosas do [ReisAglemar](https://github.com/ReisAglemar). Agradeço pela contribuição!
+
 ---
 
 Espero que se divirta jogando! Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Obrigado por conferir o projeto!
