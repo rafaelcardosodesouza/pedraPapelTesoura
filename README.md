@@ -13,7 +13,7 @@ Este é um simples jogo de "Pedra, Papel e Tesoura" desenvolvido em Java, criado
 
 1. Clone este repositório para o seu ambiente de desenvolvimento local.
     ```bash
-    git clone [URL do Repositório]
+    git clone https://github.com/rafaelcardosodesouza/pedraPapelTesoura.git
     ```
 
 2. Navegue até o diretório do projeto.
